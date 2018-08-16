@@ -2,11 +2,12 @@ package mx.com.gm.peliculas.negocio;
 
 import mx.com.gm.peliculas.datos.AccesoDatos;
 
+
 public class CatalogoPeliculasImpl implements CatalogoPeliculas {
     AccesoDatos datos;
 
-    public CatalogoPeliculasImpl(AccesoDatos datos) {
-        this.datos = datos;
+    public CatalogoPeliculasImpl() {
+        datos = datos;
     }
 
     @Override
@@ -26,6 +27,6 @@ public class CatalogoPeliculasImpl implements CatalogoPeliculas {
 
     @Override
     public void iniciarArchivo(String nombreArchivo) {
-
+        System.out.println("Iniciar el archivo");
     }
 }
